@@ -348,8 +348,8 @@ func createGameEndBanner() *fyne.Container {
 func (gw *GameWindow) RegenerateGrid(newGridSize int) {
 	gw.gridSize = newGridSize
 
-	// Reset the timer and dot counters
-	gw.timer.Reset()
+	//  the timer and dot counters
+	gw.timer.()
 	gw.blueDotCountLabel.SetText("Blue Dots: 0")
 	gw.redDotCountLabel.SetText("Red Dots: 0")
 	gw.gameEndBanner.Hide() // Hide the game end banner
@@ -359,7 +359,7 @@ func (gw *GameWindow) RegenerateGrid(newGridSize int) {
 	gw.grid.DrawGrid()
 	gw.grid.onDotPlaced = gw.UpdateDotCounters
 
-	resetButton := widget.NewButton("Reset", func() {
+	resetButton := widget.NewButton("Go try again", func() {
 		// Reset the grid
 		for x := range gw.grid.cellStates {
 			for y := range gw.grid.cellStates[x] {
