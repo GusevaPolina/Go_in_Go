@@ -35,7 +35,7 @@ func regenerateGrid(gridSize int, myWindow fyne.Window, gridSizeInput *widget.En
 	gridContainer := container.NewWithoutLayout()
 	dotsContainer := container.NewWithoutLayout()
 
-	backgroundImage := canvas.NewImageFromFile("image.png")
+	backgroundImage := canvas.NewImageFromFile("../image.png")
 	backgroundImage.FillMode = canvas.ImageFillContain
 	backgroundImage.Resize(fyne.NewSize(windowWidth, windowHeight))
 	backgroundImage.Move(fyne.NewPos(0, 0))

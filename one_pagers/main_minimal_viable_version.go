@@ -264,7 +264,7 @@ func main() {
 	windowWidth := float32(gridSize*cellSize) / 0.8
 	windowHeight := float32(gridSize*cellSize) / 0.8
 
-	backgroundImage := canvas.NewImageFromFile("image.png")
+	backgroundImage := canvas.NewImageFromFile("../image.png")
 	backgroundImage.FillMode = canvas.ImageFillContain
 	backgroundImage.Resize(fyne.NewSize(windowWidth, windowHeight))
 	backgroundImage.Move(fyne.NewPos(0, 0))
@@ -357,7 +357,7 @@ func main() {
 	drawGrid(gridContainer, gridOffsetX, gridOffsetY, cellSize, gridSize)
 
 	// Start playing background music
-	playBackgroundMusic("background.mp3")
+	playBackgroundMusic("../background.mp3")
 
 	// Layout for the banner to span the entire width
 	bannerContainer := container.NewHBox(layout.NewSpacer(), gameEndBanner, layout.NewSpacer())

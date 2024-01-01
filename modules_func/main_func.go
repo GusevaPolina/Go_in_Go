@@ -16,7 +16,7 @@ func main() {
 	myWindow := myApp.NewWindow("Go in Go: the coolest version")
 
 	// Start playing background music
-	playBackgroundMusic("background.mp3")
+	playBackgroundMusic("../background.mp3")
 
 	// Grid size input field with default value
 	gridSizeInput := widget.NewEntry()

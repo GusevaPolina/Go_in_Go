@@ -390,7 +390,7 @@ func (gw *GameWindow) RegenerateGrid(newGridSize int) {
 	})
 
 	// Load and set the background image
-	gw.backgroundImage = canvas.NewImageFromFile("background.png")
+	gw.backgroundImage = canvas.NewImageFromFile("../background.png")
 	gw.backgroundImage.FillMode = canvas.ImageFillContain
 	gw.backgroundImage.Resize(fyne.NewSize(float32(gw.windowWidth), float32(gw.windowHeight)))
 	gw.backgroundImage.Move(fyne.NewPos(0, 0))
@@ -476,7 +476,7 @@ func (gw *GameWindow) Configure() {
 	gw.window.Resize(fyne.NewSize(float32(gw.windowWidth), float32(gw.windowHeight)*1.1))
 
 	// Initialize Music Player
-	gw.musicPlayer = NewMusicPlayer("background.mp3") // Assuming you have a NewMusicPlayer function
+	gw.musicPlayer = NewMusicPlayer("../background.mp3") // Assuming you have a NewMusicPlayer function
 	gw.musicPlayer.Play()                             // Start music (if needed)
 
 	// Initialize other UI components
@@ -542,7 +542,7 @@ func NewGameWindow(app fyne.App) *GameWindow {
 	gw.timer = NewTimer(gw.timeElapsedLabel)
 
 	// Initialize MusicPlayer
-	gw.musicPlayer = NewMusicPlayer("background.mp3")
+	gw.musicPlayer = NewMusicPlayer("../background.mp3")
 
 	// Configure gridSizeInput
 	gw.gridSizeInput.SetText(fmt.Sprintf("%d", gw.gridSize))

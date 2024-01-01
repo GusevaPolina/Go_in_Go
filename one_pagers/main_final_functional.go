@@ -274,7 +274,7 @@ func regenerateGrid(gridSize int, myWindow fyne.Window, gridSizeInput *widget.En
 	gridContainer := container.NewWithoutLayout()
 	dotsContainer := container.NewWithoutLayout()
 
-	backgroundImage := canvas.NewImageFromFile("image.png")
+	backgroundImage := canvas.NewImageFromFile("../image.png")
 	backgroundImage.FillMode = canvas.ImageFillContain
 	backgroundImage.Resize(fyne.NewSize(windowWidth, windowHeight))
 	backgroundImage.Move(fyne.NewPos(0, 0))
@@ -380,7 +380,7 @@ func main() {
 	myWindow := myApp.NewWindow("Go in Go: the coolest version")
 
 	// Start playing background music
-	playBackgroundMusic("background.mp3")
+	playBackgroundMusic("../background.mp3")
 
 	// Grid size input field with default value
 	gridSizeInput := widget.NewEntry()
