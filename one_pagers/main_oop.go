@@ -349,7 +349,7 @@ func (gw *GameWindow) RegenerateGrid(newGridSize int) {
 	gw.gridSize = newGridSize
 
 	//  the timer and dot counters
-	gw.timer.()
+	gw.timer.Reset()
 	gw.blueDotCountLabel.SetText("Blue Dots: 0")
 	gw.redDotCountLabel.SetText("Red Dots: 0")
 	gw.gameEndBanner.Hide() // Hide the game end banner
