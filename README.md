@@ -45,3 +45,11 @@ The game is composed for two people playing: the first move is for blue dots and
 
 Enjoy! :bowtie: :game_die:
 
+
+
+<br />
+
+<br />
+
+### Copyrights
+Licences and authors of background's used: `image.png` by Leigh Prather with Standard licence of Adobe Stock, `background.png` by freepic with Free licence, `background.mp3` by The USAF Strings with free usage in the public domain in the United States
